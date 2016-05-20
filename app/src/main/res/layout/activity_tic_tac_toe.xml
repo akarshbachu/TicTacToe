@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bachu_000.tictactoe.TicTacToe">
+    <Button android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xscore"
+        android:text="X Score:"
+        android:textSize="15pt"/>
+
+    <TextView android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/xscore"
+        android:textSize="15pt"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yscore"
+        android:text="O Score:"
+        android:textSize="15pt"
+        android:layout_below="@id/xscore"/>
+    <TextView android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xscore"
+        android:layout_toRightOf="@id/yscore"
+        android:textSize="15pt"/>
+    <Button android:id="@+id/y2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <Button android:id="@+id/x2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/y2"/>
+    <Button android:id="@+id/z2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/y2"
+         />
+    <Button android:id="@+id/y1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/y2"
+        android:layout_below="@id/x2"
+        />
+    <Button android:id="@+id/y3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/y2"
+        android:layout_below="@id/x2"
+        />
+    <Button android:id="@+id/z3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/y2"
+        android:layout_toRightOf="@id/z2"
+        />
+    <Button android:id="@+id/z1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/y2"
+        android:layout_toLeftOf="@id/z2"
+        />
+    <Button android:id="@+id/x1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/y2"
+        android:layout_toLeftOf="@id/x2"/>
+    <Button android:id="@+id/x3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/y2"
+        android:layout_toRightOf="@id/x2"/>
+</RelativeLayout>
